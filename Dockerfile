@@ -1,5 +1,5 @@
 #
-# VERSION 0.1
+# VERSION 0.1.1
 # DOCKER-VERSION  25.0.3
 # AUTHOR:         Paolo Cozzi <paolo.cozzi@ibba.cnr.it>
 # DESCRIPTION:    A multi-stage image with tskit dependencies
@@ -17,9 +17,9 @@
 ARG APP_NAME=tskit
 ARG APP_PATH=/opt/$APP_NAME
 ARG PYTHON_VERSION=3.9
-ARG POETRY_VERSION=1.7.1
+ARG POETRY_VERSION=1.8.3
 
-FROM python:${PYTHON_VERSION} as python-build
+FROM python:${PYTHON_VERSION} AS python-build
 
 # MAINTAINER is deprecated. Use LABEL instead
 LABEL maintainer="paolo.cozzi@ibba.cnr.it"
@@ -63,7 +63,7 @@ RUN mkdir data
 ###############################################################################
 # 2nd build stage
 
-FROM python:${PYTHON_VERSION} as python-runtime
+FROM python:${PYTHON_VERSION} AS python-runtime
 
 # Import ARGs which I need in this build stage
 # IMPORTANT!: without this redefinition, you can't use variables defined
