@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "docker-tskit"
-version = "0.1.0"
+version = "0.1.2"
 description = "Docker image with tskit software"
 authors = ["Paolo Cozzi <bunop@libero.it>"]
 license = "MIT"
