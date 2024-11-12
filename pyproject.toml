@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "docker-tskit"
-version = "0.5.20"
+version = "0.5.0"
 description = "Docker image with tskitetude software"
 authors = ["Paolo Cozzi <bunop@libero.it>"]
 license = "MIT"
@@ -9,7 +9,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-tskitetude = { git = "https://github.com/bunop/TSKITetude.git", rev = "45638ba214d2579454dd1d061d8c0ce9092a2e7a" }
+tskitetude = { git = "https://github.com/bunop/TSKITetude.git", rev = "2d9c19184474842d6afc9afcc49d8584892ea590" }
 
 
 [build-system]

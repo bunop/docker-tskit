@@ -774,8 +774,8 @@ tskit = "^0.6.0"
 [package.source]
 type = "git"
 url = "https://github.com/bunop/TSKITetude.git"
-reference = "45638ba214d2579454dd1d061d8c0ce9092a2e7a"
-resolved_reference = "45638ba214d2579454dd1d061d8c0ce9092a2e7a"
+reference = "2d9c19184474842d6afc9afcc49d8584892ea590"
+resolved_reference = "2d9c19184474842d6afc9afcc49d8584892ea590"
 
 [[package]]
 name = "zarr"
@@ -801,4 +801,4 @@ jupyter = ["ipytree (>=0.2.2)", "ipywidgets (>=8.0.0)", "notebook"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e92c2da62374d29f04269c6e8f4d20b7d99554cd2cbd9b2cd2cb4c5af4f7c26c"
+content-hash = "eb6e9e90b503c5dd45637ef0f8987d59c558bb138aeb2ba4f9e89193cf83c9db"
