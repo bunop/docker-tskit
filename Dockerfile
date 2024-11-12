@@ -1,11 +1,11 @@
 #
-# VERSION 0.1.2
-# DOCKER-VERSION  25.0.3
+# VERSION 0.5.0
+# DOCKER-VERSION  27.3.1
 # AUTHOR:         Paolo Cozzi <paolo.cozzi@ibba.cnr.it>
-# DESCRIPTION:    A multi-stage image with tskit dependencies
+# DESCRIPTION:    A multi-stage image with tskitetude
 # TO_BUILD:       docker build --rm -t bunop/tskit .
 # TO_RUN:         docker run --rm -ti bunop/tskit bash
-# TO_TAG:         docker tag bunop/tskit:latest bunop/tskit:0.1.2
+# TO_TAG:         docker tag bunop/tskit:latest bunop/tskit:0.5.0
 #
 
 ###############################################################################
@@ -16,7 +16,7 @@
 # ARG in build stages
 ARG APP_NAME=tskit
 ARG APP_PATH=/opt/$APP_NAME
-ARG PYTHON_VERSION=3.11
+ARG PYTHON_VERSION=3.10
 ARG POETRY_VERSION=1.8.3
 
 FROM python:${PYTHON_VERSION} AS python-build
