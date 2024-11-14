@@ -11,7 +11,6 @@ package-mode = false
 python = "^3.10"
 tskitetude = { git = "https://github.com/bunop/TSKITetude.git", rev = "00bfb2af4ad20dcfacc6a85cc93f0f581a77ce52" }
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
