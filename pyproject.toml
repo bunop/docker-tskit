@@ -9,7 +9,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-tskitetude = { git = "https://github.com/bunop/TSKITetude.git", rev = "2d9c19184474842d6afc9afcc49d8584892ea590" }
+tskitetude = { git = "https://github.com/bunop/TSKITetude.git", rev = "00bfb2af4ad20dcfacc6a85cc93f0f581a77ce52" }
 
 
 [build-system]
