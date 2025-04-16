@@ -1,21 +1,15 @@
 [tool.poetry]
 name = "docker-tskit"
-version = "0.1.2"
-description = "Docker image with tskit software"
+version = "0.5.1"
+description = "Docker image with tskitetude software"
 authors = ["Paolo Cozzi <bunop@libero.it>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.9"
-tskit = "^0.5.6"
-tsinfer = "^0.3.1"
-tsdate = "^0.1.7"
-click = "^8.1.7"
-cyvcf2 = "^0.30.28"
-click-option-group = "^0.5.6"
-
+python = "^3.10"
+tskitetude = {git = "https://github.com/bunop/TSKITetude.git", rev = "78e5aac36718ada60f73142296e66c25e87b76d6"}
 
 [build-system]
 requires = ["poetry-core"]
