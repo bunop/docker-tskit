@@ -911,12 +911,37 @@ cyvcf2 = "^0.31.1"
 tsdate = "^0.2"
 tsinfer = "^0.5"
 tskit = "^0.6"
+tszip = "^0.2.6"
 
 [package.source]
 type = "git"
 url = "https://github.com/bunop/TSKITetude.git"
-reference = "89b06c1a5f3e8a545d691fe8157312e46930a2e5"
-resolved_reference = "89b06c1a5f3e8a545d691fe8157312e46930a2e5"
+reference = "9916c2cf7129f3da2d650f7b3160047b03d4df04"
+resolved_reference = "9916c2cf7129f3da2d650f7b3160047b03d4df04"
+
+[[package]]
+name = "tszip"
+version = "0.2.6"
+description = "Compression utilities for tree sequences"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "tszip-0.2.6-py3-none-any.whl", hash = "sha256:1f2a3568f87b28e7435ec881c49e7e3b9d98d1283b8cec9ca38537ab27ed70bb"},
+    {file = "tszip-0.2.6.tar.gz", hash = "sha256:0a619e60a157914cdf622485c24b98b7d07627e9d092bdda98f671cbc88d2835"},
+]
+
+[package.dependencies]
+humanize = "*"
+numcodecs = ">=0.6.4"
+numpy = "*"
+tskit = ">=0.3.3"
+zarr = ">=2.17,<4"
+
+[package.extras]
+dev = ["codecov", "coverage", "flake8", "h5py", "humanize", "jupyter-book", "msprime", "pre-commit", "pytest", "pytest-cov", "pytest-xdist", "setuptools_scm", "sphinx-argparse", "sphinx-issues", "sphinx_rtd_theme", "tskit", "zarr"]
+docs = ["humanize (==4.13.0)", "jupyter-book (==1.0.4.post1)", "numcodecs (>=0.6,<0.15.1)", "setuptools_scm (==9.2.0)", "sphinx-argparse (==0.5.2)", "sphinx-issues (==5.0.1)", "tskit (==0.6.4)", "zarr (==3.1.2)"]
+test = ["h5py (==3.14.0)", "humanize (==4.13.0)", "msprime (==1.3.4)", "numcodecs (>=0.6,<0.15.1)", "pytest (==8.4.2)", "pytest-cov (==6.3.0)", "pytest-xdist (==3.8.0)", "tskit (==0.6.4)", "zarr (==2.18.3) ; python_version == \"3.10\"", "zarr (==3.1.2) ; python_version >= \"3.11\""]
 
 [[package]]
 name = "typing-extensions"
@@ -956,4 +981,4 @@ jupyter = ["ipytree (>=0.2.2)", "ipywidgets (>=8.0.0)", "notebook"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "bcfaf1a72783131c8d61f81bb4c37b8f254c69b90771d6f636b20113ac53d0b0"
+content-hash = "be9e0e06aefdd66e5297f2b70b12032e72b8ced60067289081a3cf02bc294875"
