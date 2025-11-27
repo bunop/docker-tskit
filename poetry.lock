@@ -1005,37 +1005,33 @@ test = ["build (==1.2.2.post1)", "colorama (==0.4.6)", "daiquiri (==3.2.5.1)", "
 
 [[package]]
 name = "tskit"
-version = "0.6.4"
+version = "1.0.0b3"
 description = "The tree sequence toolkit."
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.10"
 groups = ["main"]
-files = [
-    {file = "tskit-0.6.4-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:1c6e230ccf6733b928c1c3bd9cb14a1e820211932c4e528505fa1918a043c87c"},
-    {file = "tskit-0.6.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:65760e95f0887f7f142025a11815f76a099fb2c1831c7046ca67e27f864c32cb"},
-    {file = "tskit-0.6.4-cp310-cp310-win_amd64.whl", hash = "sha256:184afd2720fa1f3d096e8902e35c2a155d785ba786c9dfe2fa86674943271674"},
-    {file = "tskit-0.6.4-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:510fd219f2c6d5d669e178a3ea1e4cd60d7fc0b40a50fae4859a6a8f35d2394a"},
-    {file = "tskit-0.6.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4b631d38c352b618c3ede33515cf97ffcbc24e3a4252b6979a80b1770434a534"},
-    {file = "tskit-0.6.4-cp311-cp311-win_amd64.whl", hash = "sha256:e121226092816a1e36b2835aa0348e652c09bdf0604a936f63c4fd0d64ca6422"},
-    {file = "tskit-0.6.4-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:8fd5a0c94f302f5fe69a9f7a662b8ddf8219e4dc7325a1990b279afd084bb649"},
-    {file = "tskit-0.6.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f086e648a624004343882ca57f9365d5005cc2e472113b61874c9403c14be272"},
-    {file = "tskit-0.6.4-cp312-cp312-win_amd64.whl", hash = "sha256:507eee5b20c5e47202d90a70143c601aef3b3ec70321b5251c2e6d896b1e0722"},
-    {file = "tskit-0.6.4-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:66f07b76f18ad576a7585b6e4d9e46d58994e3df1dd2d1808d32d294354695cf"},
-    {file = "tskit-0.6.4-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bfb40717382cf47b8844c1f73d73c1e7ca7f63e6a506e7f859f0980667677de2"},
-    {file = "tskit-0.6.4-cp313-cp313-win_amd64.whl", hash = "sha256:c6b1f1b22e5d55a906ee33bca33447500df0cf5b12ec20926773ca1e3c3c8931"},
-    {file = "tskit-0.6.4-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:d3b23bbe19502ea05bfef5d6214b4d92bd53ceac8200471a90d50b2d69cc2378"},
-    {file = "tskit-0.6.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:635df38965c9586bd21d1356b832eed82b9caee1634475383a434446fbfa1662"},
-    {file = "tskit-0.6.4-cp39-cp39-win_amd64.whl", hash = "sha256:3674a7e670208459dff42584c2e06f8623e78c7593581e33aabceb761e9bb722"},
-    {file = "tskit-0.6.4.tar.gz", hash = "sha256:bdac1bb7e3ae3d1f562ec191b5d840156e082dd2adc6af7c41b170c4fb1be792"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 jsonschema = ">=3.0.0"
-numpy = ">=1.23.5"
+numpy = ">=2"
+
+[package.extras]
+dev = ["biopython (>=1.70)", "breathe", "coverage", "dendropy", "flake8", "jupyter-book", "kastore", "lshmm", "msgpack", "msprime", "mypy", "networkx", "newick", "numba", "pandas", "portion", "pre-commit", "pytest", "pytest-cov", "pytest-xdist", "setuptools_scm", "sphinx-argparse", "sphinx-autodoc-typehints", "sphinx-book-theme", "sphinx-issues", "svgwrite", "tszip", "xmlunittest", "zarr (<3)"]
+docs = ["breathe (==4.35.0)", "jupyter-book (==1.0.4.post1)", "msprime (==1.3.3)", "numba (==0.61.2)", "pandas (==2.2.3)", "sphinx-argparse (==0.5.2)", "sphinx-autodoc-typehints (==2.3.0)", "sphinx-book-theme", "sphinx-issues (==5.0.0)"]
+test = ["biopython (==1.85)", "coverage (==7.7.0)", "dendropy (==5.0.1)", "kastore (==0.3.3)", "lshmm (==0.0.8)", "msgpack (==1.1.0)", "msprime (==1.3.4)", "networkx (==3.2.1)", "newick (==1.10.0)", "numba (==0.61.2)", "portion (==2.6.0)", "pytest (==8.3.5)", "pytest-cov (==6.0.0)", "pytest-xdist (==3.6.1)", "svgwrite (==1.4.3)", "tszip (==0.2.5)", "xmlunittest (==1.0.1)", "zarr (<3)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/tskit-dev/tskit.git"
+reference = "1.0.0b3"
+resolved_reference = "20d630b8109de343a16c86dbe0f6fec2582c2974"
+subdirectory = "python"
 
 [[package]]
 name = "tskitetude"
-version = "0.5.1"
+version = "0.5.2"
 description = "A toolkit for working with tree sequence data, including utilities for simulation, analysis, and visualization."
 optional = false
 python-versions = "^3.10"
@@ -1049,14 +1045,14 @@ click-option-group = "^0.5.6"
 cyvcf2 = "^0.31.1"
 tsdate = "^0.2"
 tsinfer = "^0.5"
-tskit = "^0.6"
+tskit = {git = "https://github.com/tskit-dev/tskit.git", tag = "1.0.0b3", subdirectory = "python"}
 tszip = "^0.2.6"
 
 [package.source]
 type = "git"
 url = "https://github.com/bunop/TSKITetude.git"
-reference = "v0.5.1"
-resolved_reference = "dea618f1bf3dfb9d01c7ec7f971d0740daa0e8e5"
+reference = "1f57461"
+resolved_reference = "1f57461073023b1c7ba4a77b887bc611a887ad93"
 
 [[package]]
 name = "tszip"
@@ -1120,4 +1116,4 @@ jupyter = ["ipytree (>=0.2.2)", "ipywidgets (>=8.0.0)", "notebook"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "8ca30da9010a19d3c977c4bfb8cfe1db1790f1afc4d52b5baccc30cd28082b7d"
+content-hash = "05b6f11ebddfca07f28387ae74440342a114e51d31d0e8e7235134fd7bd9c2d4"

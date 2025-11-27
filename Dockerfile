@@ -1,11 +1,11 @@
 #
-# VERSION 0.5.1
+# VERSION 0.5.2
 # DOCKER-VERSION  27.3.1
 # AUTHOR:         Paolo Cozzi <paolo.cozzi@ibba.cnr.it>
 # DESCRIPTION:    A multi-stage image with tskitetude
 # TO_BUILD:       docker build --rm -t bunop/tskit .
 # TO_RUN:         docker run --rm -ti bunop/tskit bash
-# TO_TAG:         docker tag bunop/tskit:latest bunop/tskit:0.5.1
+# TO_TAG:         docker tag bunop/tskit:latest bunop/tskit:0.5.2
 #
 
 ###############################################################################
